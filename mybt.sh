@@ -21,6 +21,7 @@ case $choice in
 	chown www:www /www/wwwroot/www.bt.cn/* -R
 	/etc/init.d/nginx reload
 	echo "127.0.0.1 www.bt.cn" >> /etc/hosts
+	echo "127.0.0.1 bt.cn" >> /etc/hosts
 	chattr +i /etc/hosts
 	echo "完成!"
 	echo "请手动更新下软件列表"
